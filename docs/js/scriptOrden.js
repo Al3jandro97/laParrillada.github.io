@@ -27,7 +27,6 @@ for (let i = 0; i < ObjectFood.length; i++) {
 }
 for (let i = 0; i < objectCortes.length; i++) {
     objectCortes[i].addEventListener('click', function(){
-        containerImgModal.style.maxWidth = "380px";
         imgCortes.src = "./img/Entradas y Cortes/TBone.png";     
     });   
 }
@@ -37,7 +36,6 @@ btnClose[0].addEventListener('click', function(){
     modalCaption.textContent = "";
     simbol.src = "./Vectores/fuego.svg"; 
     btnNext[0].textContent = "Escoger el Término";
-    containerImgModal.style.maxWidth = "340px";
 });
 btnClose[1].addEventListener('click', function(){
     orden[1].style.display = "none";
