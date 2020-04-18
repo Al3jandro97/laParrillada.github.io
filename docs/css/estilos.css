@@ -21,6 +21,7 @@ footer
     display: -ms-flexbox;
     justify-content: center;
     align-items: center;
+    bottom: 0;
 }
 .footerImgContainer
 {
