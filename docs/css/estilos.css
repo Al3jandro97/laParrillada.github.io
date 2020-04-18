@@ -34,7 +34,7 @@ body
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: white;
+    border: white 2px solid;
 }
 .swiper-slide img
 {
@@ -483,6 +483,14 @@ body
 .modalBtnNext:hover
 {
     background: #F79F1F;
+}
+
+@media screen and(max-width:1000px)
+{
+    .swiper-wrapper
+    {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width:500px)
