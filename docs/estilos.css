@@ -1,0 +1,581 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    background-image: url(../img/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-attachment: fixed;
+}
+.swiper-container {
+    margin: 0;
+    padding: 0;
+}
+.swiper-wrapper
+{
+    margin: auto;
+    width: 90%;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    flex-direction: column;   
+}
+.swiper-slide
+{   
+    text-align: center;
+    margin-bottom: 4%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.swiper-slide img
+{
+    margin: 0;
+}
+.perfil
+{
+    font-size: 35px;
+    margin-top: 0.3em;
+    padding:0.6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;     
+}
+.opPerfil
+{
+    width: 2em;
+    margin-right: 2em;
+}
+.more
+{
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute; right: 0;
+}
+.perfil h5
+{
+    position: absolute; left: 2.1em;
+
+    margin-top: -0.14em;
+    font-size: 1.4em;
+}
+.swiper-slide img
+{
+    width: 100%;
+}
+
+.swiper-slide h1
+{   
+    font-size: 5em;
+    position: absolute;
+    color: gold;
+}
+.logo
+{
+    margin: auto;
+    width: 75%;
+}
+.caption
+{
+    width: 100%;
+    text-align: justify;
+}
+.caption p
+{
+    margin-top: -0.8em;
+    padding: 10px;
+    font-size: 2.2em;
+    margin-bottom: 2%;
+}
+.like
+{
+    cursor: pointer;
+}
+.menuContainer
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu
+{ 
+    font-size: 15px;
+    width: 100%;
+    max-width: 500px;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0px;
+}
+.menuC
+{
+    position: relative;
+    width: 100%;
+    min-height: 640px;
+    z-index: 1;  
+}
+.nabBar
+{
+    padding-left: 0.7em;
+    padding-right: 0.7em;
+    width: 100%;
+    max-width: 500px;
+    height: 2.9em;
+    display: flex;
+    flex-direction: row;
+    z-index: 2;
+    background: black;
+    justify-content: space-between;
+    align-items: center;      
+}
+.logoM
+{
+    margin-top: -1.5em;
+    width: 5.5em;
+    height: 100%;
+    z-index: 2;
+}
+.logoM img
+{
+    width: 100%;
+}
+.objectBar
+{
+    width: 3.4em;
+    margin-right: 0;
+    margin-top: 0.6em;
+    z-index: 2;
+    height: 200%;
+}
+.objectBar svg
+{
+    width: 100%;
+    height: 100%;
+}
+.back
+{
+    width: 2.5em;
+}
+.Cooking-kitchen-utensil
+{
+ fill: white;
+}
+.bBack
+{
+    fill: white;
+}
+.menuFood
+{
+    padding-left: 3.8em;
+    padding-top: 3em;
+    padding-right: 0px;
+    font-size: 11px;
+    width: 100%;
+    height: 100%;
+    position: absolute; top: 0;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+}
+.menuEntradas
+{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.5em;
+    height: 19em;
+}
+.menuCortes
+{
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3em;
+    height: 31em;
+}
+.objectFood
+{
+    width: 100%;
+    margin-bottom: 0.5em;
+    cursor: pointer;
+}
+.nameAndprice
+{
+    display: flex;
+    text-align: center;
+}
+.priceFood
+{
+    font-size: 1.1em;
+    font-family: 'Franklin Gothic Heavy';
+    color: white;
+    font-style: normal;
+    margin-right: 0.4em;
+}
+.nameFood
+{
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.1em;
+    color: #e1d033;
+    font-style: italic;
+}
+.captionFood
+{
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.1em;
+    color: white;
+    font-style: italic;
+    margin-right: 0.5em;
+    margin-left: 0px;
+}
+.weightFood
+{
+    font-family: 'Franklin Gothic Book';
+    font-size: 1.1em;
+    color: white;
+    font-style: italic;
+    margin-right: 0.5em;
+    margin-left: 0px;
+}
+.modalContainer
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute; top: 0;
+    width: 100%;
+    height: 100%;
+    min-height: 690px;
+    max-height: 690px;
+    z-index: 3;
+    overflow: hidden; 
+}
+.modalMenu
+{
+    position: fixed; top: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5em;
+    max-height: 690px;
+    max-width: 500px;
+    align-items: center;
+    animation-name: modal;
+    animation-duration: 1.5s;
+}
+@keyframes modal
+{
+    from{top: -700px; opacity: 0;}
+    to{top: 0; opacity: 1;}
+}
+.modalOrden
+{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #000000;    
+}
+.modalTermino
+{
+    display: none;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 24.94%, #FFFFFF 100%), #000000;
+    width: 100%;
+    height: 100%;
+}
+.modalTerminoTitle
+{
+    font-family: 'Franklin Gothic Book, arial';
+    color: #e1d033;
+    font-size: 2.5em;
+    margin-top: 0.2em;
+    margin-bottom: 0.3em;
+}
+#modalSelectTermino_Container
+{
+    font-size: 16px;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+.modalSlideContainer
+{
+    position: absolute; top: 0;
+    width: 100%;
+    height: 100%;
+}
+.styleContainer
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.backSlide
+{
+    background: white;
+    border-radius: 15px;
+    height: 70%;
+    width: 10px;
+    z-index: 1;
+    margin-left: 1.5em;
+    margin-top: -0.5em;
+}
+#progress
+{
+    border-radius: 15px;
+    top: 0;
+    width: 10px;
+    background: #ff7300;
+    height: 53%;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.658);
+    box-shadow: inset 0px 0px 5px 1px black;
+}
+.slideP
+{
+    margin-top:-1em ;
+    margin-left: -9.9em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    outline: none;
+    width: 63%;
+    height: 10px;
+    z-index: 3;
+    opacity: 0;
+}
+.slideP::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+}
+#selector
+{
+   width: 10px;
+   height: 48px;
+   position: absolute; 
+   left: 0.6em;
+   top: 41%;
+   transform: translateX(-50%);
+   z-index: 2;
+}
+#selectBtn
+{
+    height: 45px;
+    width: 45px;
+    background-image: url(../img/flame.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+#selectTermino
+{
+    width: 100%;
+}
+.modalBtnGuar
+{
+    margin-bottom: 1em;
+}
+.captionTermino
+{
+    font-family: 'Franklin Gothic Book, arial';
+    font-size: 1.3em;
+}
+#imgContainer
+{
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#imgContainer img
+{
+    width: 100%;
+}
+.modalBtnClose
+{
+    margin-top: 0.2em;
+    width: 3em;
+    cursor: pointer;
+}
+.btnClose
+{
+    fill: #e1d033;
+}
+#information
+{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 0.5em;
+    width: 100%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#modalNameFood
+{
+    font-family: 'Franklin Gothic Heavy, arial';
+    font-size: 2.5em;
+    color: #e1d033;
+}
+#modalCaptionFood
+{
+    padding-top: 1em;
+    padding-left: 1.6em;
+    padding-right: 1.6em;
+    font-family: 'Franklin Gothic Book, arial';
+    text-align: justify;
+    font-size: 1em;
+    font-style: oblique;
+    margin-bottom: 2em;
+    color: white;
+}
+.modalBtnNext
+{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Book, arial';
+    font-style: italic;
+    padding-right: 11px;
+    padding-left: 11px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 70%;
+    max-width: 300px;
+    height: 3.2em;
+    background-color: #e1d033;
+    border-radius: 1.3em;
+    cursor: pointer;   
+}
+.btnNext
+{
+    font-size: 1.2em;
+}
+.simbolNext
+{
+    margin-top: 0.3em;
+    width: 2.25em;
+}
+.simbol
+{
+    width: 100%;
+}
+.modalBtnNext:hover
+{
+    background: #F79F1F;
+}
+
+@media screen and (max-width:500px)
+{
+    .caption p
+    {
+        font-size: 1em; 
+    }  
+}
+@media screen and (max-width:550px)
+{
+    .menu
+    {
+       font-size: 16px; 
+    } 
+}
+@media screen and (max-width:450px)
+{
+    .menu
+    {
+       font-size: 14px;
+    }
+    .menuFood
+    {
+        padding-top: 3.1em;
+        font-size: 10.8px;
+        padding-left: 3.4em;
+    }
+    .menuEntradas
+    {
+        margin-bottom: 3.7em;
+    }
+}
+@media screen and (max-width:400px)
+{
+    .menuFood
+    {
+        padding-left: 3.2em;
+    }
+    #slideP
+    {
+        margin-left: -9.3em;
+    }
+}
+@media screen and (max-width:360px)
+{
+    .menu
+    {
+       font-size: 14px; 
+    }
+    .menuFood
+    {
+        padding-left: 2.7em;
+    }
+    .modalBtnNext
+    {
+        font-size: 14px;
+    }
+    .modalBtnClose
+    {
+        margin-top: 1em;
+        margin-right: .3em;
+        width: 3em;
+    }
+    #information
+    {
+        font-size: 12px;
+        padding: 0.5em;
+    }
+    #modalCaptionFood
+    {
+        font-size: 1.3em;
+    }
+    #selectTermino
+    {
+        max-width: 340;
+    }
+    .modalTerminoTitle
+    {
+        font-size: 2.1em;
+    }
+    #slideP
+    {
+        margin-left: -8.8em;
+    }
+    #selectBtn
+    {
+        width: 40px;
+        height: 40px;
+        margin-left: 0.2em;
+    }
+}
+
+
+
+
